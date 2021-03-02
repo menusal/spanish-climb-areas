@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.list {
+  position: absolute;
+  padding-top: 80px;
+  width: 250px;
+  height: 80vh;
+  background-color: #030303;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  overflow-y: auto;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 245px;
+}
+
+.result {
+  position: fixed;
+  top: 37px;
+  left: 0;
+  width: 245px;
+  color: #FFF;
+  font-weight: 700;
+  padding: 1em;
+}
+
+.search input {
+  width: 96%;
+  height: 35px;
+  border:none;
+  background-color: rgb(54, 0, 0);
+  color: #fff;
+  font-weight: 700;
+  padding-left: 1em;
+}
+
+.title {
+  position: absolute;
+  width: auto;
+  top: 36px;
+  right: 36px;
+  z-index: 4;
+  border-radius: 5px;
+}
+
+.list .item {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: .4s;
+  color: rgb(116, 116, 116);
+}
+
+
+.list .item:hover {
+  background-color: #212121;
+  color: #fff;
+  padding-left: 2em;
+  border-bottom: 1px solid #f3f3f3;
+
+}
+
+.title h1 {
+  color: #FFF;
+}
+
+.control {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  padding: 0.5em 1em;
+  background-color: rgb(167, 32, 32);
+  color: #FFF; 
+  transition: .4s;
+}
+
+.control:hover {
+  background-color: rgb(233, 70, 70);
+  color: #FFF; 
+}
